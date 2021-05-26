@@ -7,3 +7,6 @@ Clinify Blog, in less words, is a place where clinify Members write (ranging fro
 Discussions were held about the vision of the blog (before deciding to make this project open source) and some of the key takeaways were:
 - It can contain articles about almost any kind of theme, with a supervision of course. (The method of which we are yet to decide upon)
 - Only clinify members shall be allowed the writing permissions in the Blog Website. 
+
+## Designs
+Check the initial prototype preview <a href="https://www.figma.com/proto/lDqugnE4ifN0X521f3KMER/Clinify-Blog?page-id=0%3A1&node-id=45%3A16&viewport=715%2C219%2C0.4623492956161499&scaling=scale-down-width">here</a>.
