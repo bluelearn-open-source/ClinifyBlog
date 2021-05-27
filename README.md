@@ -10,3 +10,8 @@ Discussions were held about the vision of the blog (before deciding to make this
 
 ## Designs
 Check the initial prototype preview <a href="https://www.figma.com/proto/lDqugnE4ifN0X521f3KMER/Clinify-Blog?page-id=0%3A1&node-id=45%3A16&viewport=715%2C219%2C0.4623492956161499&scaling=scale-down-width">here</a>.
+
+
+## Backend Plan
+Here is a basic backend plan made on MIRO. can checkout (create an issue if you think of any update or mistake in it.
+<a href="https://miro.com/app/board/o9J_lCYaPbU=/">Click here to view</a>.      
