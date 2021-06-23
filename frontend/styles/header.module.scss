@@ -1,0 +1,65 @@
+/* FONT IMPORTED */
+
+/* Fira Sans */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+$bg: #1b3940;
+$bg-accent: #484a4d;
+$text-color: #ffffff;
+$nav-size: 60px;
+$border: 1px soild #474a4d;
+$speed: 500ms;
+/* Nav Bar*/
+.navbarbase {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	a.title {
+		color: $text-color;
+		text-decoration: none;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 32px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.2px;
+    align-self: flex-start;
+    padding-left: 1em;
+    padding-right: auto;
+	}
+  a.title2{
+    color: $text-color;
+		text-decoration: none;
+  }
+  .namegroup{
+    height: $nav-size;
+		background-color: $bg;
+		padding: 0 1rem;
+		border-bottom: $border;
+    max-width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+    padding-right: 2rem;
+    // padding:auto;
+  }
+	.navbar {
+		height: $nav-size;
+		background-color: $bg;
+		padding: 0 1rem;
+		border-bottom: $border;
+	}
+	.navbarnav {
+		max-width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	
+	}
+}
