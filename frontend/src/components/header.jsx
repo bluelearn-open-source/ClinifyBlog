@@ -26,22 +26,27 @@ export default function Header() {
                             Clinify Blog
                         </a>
                     </li>
-                    <div className="shadow flex bg-gray-100 bg-opacity-10 w-auto min-w-max rounded-full self-center">
-                        <button
-                            className="bg-transparent w-auto flex justify-end items-center text-blue-500 p-2 
-                        hover:text-blue-400 rounded-full
-                        focus:outline-none 
-                        "
-                        >
-                            <div className="px-1">
-                                <SearchIcon />
-                            </div>
-                        </button>
-                        <input
-                            className="bg-transparent w-full rounded p-2 focus:outline-none"
-                            type="text"
-                            placeholder="Search..."
-                        />
+                    <div className="flex flex-row">
+                        <div className="shadow flex bg-gray-100 bg-opacity-10 w-64 min-w-max rounded-full self-center">
+                            <button
+                                className="bg-transparent w-auto flex justify-end items-center text-blue-500 p-2
+                            hover:text-blue-400 rounded-full
+                            focus:outline-none
+                            "
+                            >
+                                <div className="px-1">
+                                    <SearchIcon />
+                                </div>
+                            </button>
+                            <input
+                                className="bg-transparent w-full rounded p-2  focus:outline-none"
+                                type="text"
+                                placeholder="Search..."
+                            />
+                        </div>
+                        <li className="self-center pl-8">
+                            <a href="#" className="text-l self-center font-semibold leading-none text-gray-100">Categories</a>
+                        </li>
                     </div>
                     <div className="flex flex-row">
                         <button className="text-bg bg-white flex flex-row rounded-full p-2 mx-2 pr-4 focus:outline-none">
@@ -63,7 +68,7 @@ export default function Header() {
                                 Post
                             </p>
                         </button>
-                        <li className="text-bg bg-white flex flex-row rounded-full p-2 mx-2">
+                        <button className="text-bg bg-white flex flex-row rounded-full p-2 mx-2 focus:outline-none">
                             <svg
                                 width="24"
                                 height="24"
@@ -86,7 +91,7 @@ export default function Header() {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </li>
+                        </button>
                     </div>
                 </ul>
             </nav>
