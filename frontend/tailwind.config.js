@@ -12,6 +12,9 @@ module.exports = {
 			"bg": "#1b3940",
 			"bg-accent": "#484a4d",
 		  },
+		  fontFamily:{
+"mulish":['Mulish']
+		  }
 		},
 	  },
 	variants: {

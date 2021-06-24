@@ -4,6 +4,7 @@
 @tailwind utilities;
 /*Lato Font*/
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
 html,
 body {
   padding: 0;
