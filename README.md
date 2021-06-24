@@ -13,6 +13,12 @@ Discussions were held about the vision of the blog (before deciding to make this
 
 Check the initial prototype preview [here](https://www.figma.com/proto/lDqugnE4ifN0X521f3KMER/Clinify-Blog?page-id=0%3A1&node-id=45%3A16&viewport=715%2C219%2C0.4623492956161499&scaling=scale-down-width)
 
+## Frontend
+
+Frontend is being build with React Nextjs & tailwindcss
+
+Check the live devlopment build deployed on vercel [here](https://clinify-blog.vercel.app/)
+
 ## Backend Plan
 
 Here is a basic backend plan made on MIRO. can checkout (create an issue if you think of any update or mistake in it.
