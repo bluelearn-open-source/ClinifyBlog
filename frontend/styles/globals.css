@@ -2,7 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*Lato Font*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
 html,
 body {
   padding: 0;
@@ -18,4 +19,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.logo-text{
+  color:white;
+  text-decoration: none;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 32px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.2px;
+		align-self: flex-start;
+		padding-left: 1em;
+		padding-right: auto;
 }

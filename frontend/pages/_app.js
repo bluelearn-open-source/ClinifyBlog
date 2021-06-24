@@ -1,4 +1,4 @@
-// import '../styles/globals.css'
+import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 
 import Header from '../src/components/header'
