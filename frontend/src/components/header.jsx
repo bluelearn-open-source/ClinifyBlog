@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/header.module.scss";
 import { SearchIcon, PlusIcon } from "@heroicons/react/solid";
 
@@ -36,6 +36,7 @@ const ProfileIcon = () => {
 
 
 export default function Header() {
+    const [isOpen,setIsOpen]= useState(false)
     return (
         <div className={styles.navbarbase}>
             <nav className="h-16 px-16 bg-bg">
@@ -47,10 +48,11 @@ export default function Header() {
                     </li>
                     <div className="flex flex-row">
                         <SearchBar />
-                        <div className='relative inline-block'>
-                            <li className="self-center pl-8">
-                                <a href="#" className="self-center font-semibold leading-none text-gray-100 text-l">Categories</a>
-                            </li>
+                        <div className='relative inline-block py-2'>
+                            <button className="self-center pl-8" onClick={()=>{setIsOpen(!isOpen)}}>
+                                <a href="#" className="self-center font-semibold  leading-none text-gray-100 text-l">Categories</a>
+                            </button>
+                            {isOpen&&
                             <div>
                                 <div className='absolute flex p-4 bg-white rounded'>
                                     <div className='p-4 border-r-2 border-gray-300'>
@@ -72,6 +74,7 @@ export default function Header() {
                                     </div>
                                 </div>
                             </div>
+}
                         </div>
                     </div>
                     <div className="flex flex-row">
