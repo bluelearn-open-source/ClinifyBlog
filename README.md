@@ -21,5 +21,5 @@ Check the live devlopment build deployed on vercel [here](https://clinify-blog.v
 
 ## Backend Plan
 
-Here is a basic backend plan made on MIRO. can checkout (create an issue if you think of any update or mistake in it.
+Here is a basic backend plan made on miro. can checkout (create an issue if you think of any update or mistake in it.
 [Click here to view](https://miro.com/app/board/o9J_lCYaPbU=/).
