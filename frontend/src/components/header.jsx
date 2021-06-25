@@ -19,63 +19,62 @@ const SearchIcon = () => (
 export default function Header() {
     return (
         <div className={styles.navbarbase}>
-            <nav className="bg-bg h-16 px-16">
-                <ul className="max-w-full h-full flex justify-between items-center">
+            <nav className="h-16 px-16 bg-bg">
+                <ul className="flex items-center justify-between h-full max-w-full">
                     <li>
                         <a href="#" className="logo-text">
                             Clinify Blog
                         </a>
                     </li>
                     <div className="flex flex-row">
-                        <div className="shadow flex bg-gray-100 bg-opacity-10 w-64 min-w-max rounded-full self-center">
+                        <div className="flex self-center w-64 bg-gray-100 rounded-full shadow bg-opacity-10 min-w-max">
                             <button
-                                className="bg-transparent w-auto flex justify-end items-center text-blue-500 p-2
-                            hover:text-blue-400 rounded-full
-                            focus:outline-none
-                            "
+                                className="flex items-center justify-end w-auto p-2 text-blue-500 bg-transparent rounded-full hover:text-blue-400 focus:outline-none "
                             >
                                 <div className="px-1">
                                     <SearchIcon />
                                 </div>
                             </button>
                             <input
-                                className="bg-transparent w-full rounded p-2  focus:outline-none"
+                                className="w-full p-2 bg-transparent rounded focus:outline-none"
                                 type="text"
                                 placeholder="Search..."
                             />
                         </div>
-                        <li className="self-center pl-8">
-                            <a href="#" className="text-l self-center font-semibold leading-none text-gray-100">Categories</a>
-                        </li>
- <div>
-                                <div class='flex rounded bg-white absolute p-4'>
+                        <div className='relative inline-block'>
+                            <li className="self-center pl-8">
+                                <a href="#" className="self-center font-semibold leading-none text-gray-100 text-l">Categories</a>
+                            </li>
+                            <div>
+                                <div className='absolute flex p-4 bg-white rounded'>
                                     <div className='p-4 border-r-2 border-gray-300'>
 
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Education</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Finance</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Clinify Events</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Business</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Coding</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Science</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Education</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Finance</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Clinify Events</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Business</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Coding</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Science</a>
                                     </div>
                                     <div className='p-4'>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Startup</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Sports</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Technology</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Food</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Startup</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Sports</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Technology</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Food</a>
 
 
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                     <div className="flex flex-row">
-                        <button className="text-bg bg-white flex flex-row rounded-full p-2 mx-2 pr-4 focus:outline-none">
+                        <button className="flex flex-row p-2 pr-4 mx-2 bg-white rounded-full text-bg focus:outline-none">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -87,11 +86,11 @@ export default function Header() {
                                     d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                                 />
                             </svg>
-                            <p className="text-l font-semibold self-center leading-none text-bg font-mulish">
+                            <p className="self-center font-semibold leading-none text-l text-bg font-mulish">
                                 Post
                             </p>
                         </button>
-                        <button className="text-bg bg-white flex flex-row rounded-full p-2 mx-2 focus:outline-none">
+                        <button className="flex flex-row p-2 mx-2 bg-white rounded-full text-bg focus:outline-none">
                             <svg
                                 width="24"
                                 height="24"
