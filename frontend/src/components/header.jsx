@@ -47,6 +47,29 @@ export default function Header() {
                         <li className="self-center pl-8">
                             <a href="#" className="text-l self-center font-semibold leading-none text-gray-100">Categories</a>
                         </li>
+ <div>
+                                <div class='flex rounded bg-white absolute p-4'>
+                                    <div className='p-4 border-r-2 border-gray-300'>
+
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Education</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Finance</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Clinify Events</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Business</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Coding</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Science</a>
+                                    </div>
+                                    <div className='p-4'>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Startup</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Sports</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Technology</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Food</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                     <div className="flex flex-row">
                         <button className="text-bg bg-white flex flex-row rounded-full p-2 mx-2 pr-4 focus:outline-none">
