@@ -54,7 +54,7 @@ export default function Header() {
                             </button>
                             {isOpen&&
                             <div>
-                                <div className='absolute flex p-4 bg-white rounded'>
+                                <div className='absolute flex p-4 bg-white rounded shadow-2xl'>
                                     <div className='p-4 border-r-2 border-gray-300'>
 
                                         <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Education</a>
