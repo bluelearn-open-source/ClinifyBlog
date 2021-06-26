@@ -1,0 +1,41 @@
+[
+  {
+      "model": "api.author",
+      "pk": 1,
+      "fields": {
+          "name": "Divyansh Agrawal",
+          "picture": "https://www.postplanner.com/hs-fs/hub/513577/file-2886416984-png/blog-files/facebook-profile-pic-vs-cover-photo-sq.png?width=250&height=250&name=facebook-profile-pic-vs-cover-photo-sq.png"
+      }
+  },
+  {
+      "model": "api.author",
+      "pk": 2,
+      "fields": {
+          "name": "Manav Saspal",
+          "picture": "https://www.postplanner.com/hs-fs/hub/513577/file-2886416984-png/blog-files/facebook-profile-pic-vs-cover-photo-sq.png?width=250&height=250&name=facebook-profile-pic-vs-cover-photo-sq.png"
+      }
+  },
+
+  {
+      "model": "api.post",
+      "pk": 1,
+      "fields": {
+          "title": "What Happened at Clinify x Beyond Overthinking meetup?",
+          "author": 1,
+          "slug":"what-happened-at-clinify-x-beyond-overthinking-meetup",
+          "category": "Clinify Events",
+          "backgroundlink": "https://www.thoughtco.com/thmb/9-TaSUt-qCdOp1Xh3P43mutTmeA=/2121x1414/filters:fill(auto,1)/GettyImages-887987150-5c770377c9e77c00011c82e6.jpg"
+      }
+  },
+  {
+      "model": "api.post",
+      "pk": 2,
+      "fields": {
+          "title": "What I learnt at Clinify in 9 months",
+          "author": 2,
+          "slug":"what-i-learnt-at-clinify-in-9-months",
+          "category": "Clinify Events",
+          "backgroundlink": "https://www.thoughtco.com/thmb/9-TaSUt-qCdOp1Xh3P43mutTmeA=/2121x1414/filters:fill(auto,1)/GettyImages-887987150-5c770377c9e77c00011c82e6.jpg"
+      }
+  }
+]
