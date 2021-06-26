@@ -19,7 +19,7 @@ class Query(graphene.ObjectType):
     all_posts = graphene.List(PostType)
     post = graphene.Field(PostType, post_id=graphene.Int())
     all_authors = graphene.List(AuthorType)
-    author = graphene.Field(AuthorType, author_id_id=graphene.Int())
+    author = graphene.Field(AuthorType, author_id=graphene.Int())
 
     def resolve_all_posts(self, info, **kwargs):
         return Post.objects.all()
