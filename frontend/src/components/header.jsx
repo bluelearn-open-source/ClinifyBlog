@@ -48,8 +48,10 @@ export default function Header() {
                     </li>
                     <div className="flex flex-row">
                         <SearchBar />
-                        <div className='relative inline-block py-2'>
-                            <button className="self-center pl-8" onClick={()=>{setIsOpen(!isOpen)}}>
+                        <div className='relative inline-block py-2' onMouseEnter={()=>setIsOpen(true)}
+						onMouseLeave={()=>setIsOpen(false)}>
+                            <button className="self-center pl-8" 
+							 onClick={()=>{setIsOpen(!isOpen)}}>
                                 <a href="#" className="self-center font-semibold  leading-none text-gray-100 text-l">Categories</a>
                             </button>
                             {isOpen&&
@@ -65,7 +67,7 @@ export default function Header() {
                                         <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">Science</a>
                                     </div>
                                     <div className='p-4'>
-                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
+                                        <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Design</a>
                                         <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Startup</a>
                                         <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Travel</a>
                                         <a href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100 ">Sports</a>
