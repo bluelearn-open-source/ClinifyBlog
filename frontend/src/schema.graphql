@@ -1,0 +1,70 @@
+input AuthorInput {
+  id: ID
+  name: String
+  picture: String
+}
+
+type AuthorType {
+  id: ID!
+  name: String!
+  picture: String!
+  postSet: [PostType!]!
+}
+
+type CreateAuthor {
+  author: AuthorType
+}
+
+type CreatePost {
+  post: PostType
+}
+
+type DeleteAuthor {
+  author: AuthorType
+}
+
+type DeletePost {
+  post: PostType
+}
+
+type Mutation {
+  createPost(postData: PostInput!): CreatePost
+  updatePost(postData: PostInput!): UpdatePost
+  deletePost(id: ID): DeletePost
+  createAuthor(authorData: AuthorInput!): CreateAuthor
+  updateAuthor(authorData: AuthorInput!): UpdateAuthor
+  deleteAuthor(id: ID): DeleteAuthor
+}
+
+input PostInput {
+  id: ID
+  title: String
+  author: Int
+  category: String
+  backgroundlink: String
+}
+
+type PostType {
+  id: ID!
+  title: String!
+  backgroundlink: String!
+  slug: String
+  category: String!
+  author: AuthorType!
+}
+
+type Query {
+  allPosts: [PostType]
+  post(postId: Int): PostType
+  allAuthors: [AuthorType]
+  author(authorIdId: Int): AuthorType
+}
+
+type UpdateAuthor {
+  author: AuthorType
+}
+
+type UpdatePost {
+  post: PostType
+}
+
