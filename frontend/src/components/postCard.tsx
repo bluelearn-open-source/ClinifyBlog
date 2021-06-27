@@ -27,23 +27,25 @@ export const PostCard: React.FC<PostPreview> = ({
 }) => {
 	return (
 		<div>
-			<div className="bg-gradient-to-br from-gray-100 via-gray-100 to-white shadow rounded-2xl h-auto w-96  p-4 flex flex-col justify-around">
-				<img className="rounded-md" src={backgroundlink} alt={title} />
-				<p className="w-wuto h-auto text-lg font-extrabold text-center text-gray-800">
+			<div className="bg-gradient-to-br from-gray-100 via-gray-100 to-white shadow rounded-3xl
+            h-auto  max-w-sm  p-4 flex flex-col justify-around"
+            >
+				<img className="rounded-3xl" src={backgroundlink} alt={title} />
+				<p className="w-full h-auto py-2 text-lg font-extrabold text-center text-gray-800">
 					{title}
 				</p>
 				<div className="h-16 flex flex-row w-full justify-between">
 					<div className="flex flex-row items-stretch justify-center w-auto py-2.5 px-0 pr-1 bg-gray-200 rounded-full">
 						<img
-							className="mx-4 w-12 h-12 rounded-full self-center"
+							className="mx-2 w-12 h-12 rounded-full self-center"
 							src={author.picture}
 							alt={"Image of " + author.name}
 						/>
-						<p className="flex-1 py-2 h-full text-lg font-semibold text-gray-800 whitespace-nowrap self-center">
+						<p className="flex-1 py-2 pr-2 h-full text-lg font-semibold text-gray-800 whitespace-nowrap self-center">
 							{author.name}
 						</p>
 					</div>
-                    <div className="w-16 h-16 bg-gray-800 rounded-full flex justify-center items-center shadow-md self-end">
+                    <div className="w-16 h-16 bg-gray-800 rounded-full flex justify-center items-center shadow-md self-end mr-4">
 
                         <LaterSvg/>
                     </div>
