@@ -19,7 +19,7 @@ class Query(graphene.ObjectType):
     all_posts = graphene.List(PostType)
     post = graphene.Field(PostType, post_id=graphene.Int())
     all_authors = graphene.List(AuthorType)
-    author = graphene.Field(AuthorType, author_id_id=graphene.Int())
+    author = graphene.Field(AuthorType, author_id=graphene.Int())
 
     def resolve_all_posts(self, info, **kwargs):
         return Post.objects.all()
@@ -39,6 +39,7 @@ class PostInput(graphene.InputObjectType):
     author = graphene.Int()
     category = graphene.String()
     backgroundlink = graphene.String() 
+    content = graphene.String()
 
 class AuthorInput(graphene.InputObjectType):
     id = graphene.ID()
@@ -57,7 +58,8 @@ class CreatePost(graphene.Mutation):
             title=post_data.title,
             author=Author.objects.get(pk=post_data.author),
             backgroundlink=post_data.backgroundlink,
-            category = post_data.category
+            category = post_data.category,
+            content = post_data.content
         )
         post_instance.save()
         return CreatePost(post=post_instance)
@@ -93,6 +95,7 @@ class UpdatePost(graphene.Mutation):
             post_instance.author = Author.objects.get(pk=post_data.author)
             post_instance.backgroundlink = post_data.backgroundlink
             post_instance.category = post_data.category
+            post_instance.content = post_data.content
             post_instance.save()
 
             return UpdatePost(post=post_instance)

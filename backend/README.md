@@ -43,13 +43,14 @@ mutation deleteMutation{
 slug and id is created automatically
 ```
 mutation createMutation {
-  createPost(postData: {title: "put title here", author: authorID, backgroundlink: "link of the image", category: "put category here"}){
+  createPost(postData: {title: "put title here", author: authorID, backgroundlink: "link of the image", category: "put category here", content: "put content here"}){
     post{
       id
       title
       slug
       backgroundlink
       category
+      content
       author {
         id
         name
@@ -65,13 +66,14 @@ mutation createMutation {
 n is numeric id
 ```
 mutation updateMutation {
-  updatePost(postData: {id: n, title: "put updated title here", slug: "put updated slug here", author: authorID, backgroundlink: "updated link of the image", category: "put updated category here"}){
+  updatePost(postData: {id: n, title: "put updated title here", slug: "put updated slug here", author: authorID, backgroundlink: "updated link of the image", category: "put updated category here", content: "put updated content here"}){
     post{
       id
       title
       slug
       backgroundlink
       category
+      content
       author {
         id
         name
@@ -103,6 +105,7 @@ query {
     title
     slug
     category
+    content
     author {
       id
       name
@@ -123,6 +126,7 @@ query {
     title
     slug
     category
+    content
     author {
       id
       name

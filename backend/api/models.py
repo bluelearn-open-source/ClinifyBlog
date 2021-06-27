@@ -15,6 +15,7 @@ class Post(models.Model):
   slug = models.CharField(max_length=1000, unique=True, null=True, blank=True)
   category = models.CharField(max_length=100)
   author = models.ForeignKey(Author, on_delete=models.CASCADE)
+  content = models.TextField()
   
   def __str__(self):
     return self.title
