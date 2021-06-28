@@ -7,14 +7,14 @@ const samplePost: PostPreview = {
 	id: "3",
 	title: "What happened at the ‘Clinify x Beyond Overthinking’  meetup?",
 	backgroundlink:
-		"./assets/bg.jfif",
+		"./Assets/bg.jfif",
 	category: "Clinify Events",
 	slug: "what-happened-at-the-clinify-x-beyond-overthinking-meetup-none",
 	author: {
 		id: "2",
 		name: "Divyansh Aggarwal",
 		picture:
-			"/assets/divyansh.png",
+			"/Assets/divyansh.png",
 	},
 };
 
