@@ -11,7 +11,7 @@ Discussions were held about the vision of the blog (before deciding to make this
 
 ## Designs
 
-Check the initial prototype preview [here](https://www.figma.com/proto/lDqugnE4ifN0X521f3KMER/Clinify-Blog?page-id=0%3A1&node-id=45%3A16&viewport=715%2C219%2C0.4623492956161499&scaling=scale-down-width)
+Check the initial prototype preview [here](https://www.figma.com/proto/SXImQuBg7e6Cp0cwQsDhdu/Blog?node-id=1%3A104&scaling=scale-down-width&page-id=0%3A1)
 
 ## Frontend
 
