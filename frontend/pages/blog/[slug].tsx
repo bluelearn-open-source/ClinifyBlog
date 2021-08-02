@@ -10,6 +10,7 @@ export interface Content {
 	content: string;
 	slug: string;
 	user: User;
+	title:string
 }
 
 export interface User {
@@ -23,8 +24,9 @@ const Blog = ({ content, found }: { content?: Content; found: boolean }) => {
 		return (
 			<figure className="md:flex flex-col bg-gray-100 rounded-xl p-8">
 				<div className="pt-6 text-left space-y-4">
+					<h1 className="text-2xl font-semibold text-gray-800 ">{content.title}</h1>
 					<blockquote>
-						<p className="text-lg font-semibold">
+						<p className="text-lg font-normal">
 							“{content.content}”
 						</p>
 					</blockquote>
