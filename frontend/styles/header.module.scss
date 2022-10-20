@@ -61,4 +61,25 @@ $speed: 500ms;
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	nav a:hover {
+		color: rgb(36, 21, 21);
+	  }
+
+	  
+	nav a::before {
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: #444;
+	  
+		position: absolute;
+		top: 0;
+		width: 0%;
+	  
+		transition: all ease-in-out 250ms;
+	  }
+	  nav a:hover::before {
+		width: 100%;
+	  }
 }
