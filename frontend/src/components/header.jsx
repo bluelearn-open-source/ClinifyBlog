@@ -14,16 +14,20 @@ const PostButton = () => {
 
 
 
-const SearchBar = () => {
-	return (<div className="flex self-center w-64 bg-gray-100 rounded-full shadow bg-opacity-10 min-w-max">
-		<button className="flex items-center justify-end w-auto p-2 text-blue-500 bg-transparent rounded-full hover:text-blue-400 focus:outline-none ">
-			<div className="px-1">
-				<SearchIcon className="h-5 w-5 text-white" />
-			</div>
-		</button>
-		<input className="w-full p-2 bg-transparent rounded focus:outline-none" type="text" placeholder="Search..." />
-	</div>);
-}
+const SearchBar = () => (
+    <form action="/" method="get">
+        <label htmlFor="header-search">
+            <span className="visually-hidden">Search blog posts</span>
+        </label>
+        <input
+            type="text"
+            id="header-search"
+            placeholder="Search blog posts"
+            name="s" 
+        />
+        <button type="submit">Search</button>
+    </form>
+);
 
 
 
